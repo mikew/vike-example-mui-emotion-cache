@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-set -ex
-
-rm -rf ./dist
-./node_modules/.bin/vite build
-cd dist/client/
-npx serve -p 4000

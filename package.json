@@ -3,9 +3,9 @@
     "dev": "npm run server",
     "prod": "npm run lint && npm run build && npm run server:prod",
     "build": "vite build",
-    "server": "node --loader ts-node/esm ./server/index.ts",
+    "server": "node --loader ts-node/esm ./src/server/index.ts",
     "server:prod": "cross-env NODE_ENV=production npm run server",
-    "lint": "eslint {pages,renderer,server} --max-warnings 0"
+    "lint": "eslint src/ --max-warnings 0"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
