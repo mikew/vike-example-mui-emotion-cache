@@ -9,6 +9,9 @@ extra class name, you can do something like:
     :root .MuiButton-root {
       color: #f0f;
     }
+
+This proposal in vike would solve the ordering issues:
+https://github.com/vikejs/vike/issues/695
 */
 
 .mui-overrides .MuiButton-root {

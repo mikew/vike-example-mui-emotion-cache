@@ -1,14 +1,25 @@
-Example of using [vite-plugin-ssr](https://vite-plugin-ssr.com/) with [MUI](https://mui.com/).
+# vike-example-mui-emotion-cache
+
+Example of using [vike](https://github.com/vikejs/vike) with [MUI](https://mui.com/).
 
 ```bash
-git clone git@github.com:brillout/vps-mui
-cd vps-mui/
+git clone https://github.com/mikew/vike-example-mui-emotion-cache
+
+cd vike-example-mui-emotion-cache/
 pnpm install
+
 pnpm run dev
 # Or
 pnpm run prod
 ```
 
-It uses [this workaround](https://github.com/brillout/vps-mui/commit/e74f6e809e2ca6ae54bd593178926a405ffce5b3) for [mui/material-ui#37375](https://github.com/mui/material-ui/issues/37375).
+## Notes
 
-See [this conversation](https://github.com/brillout/vite-plugin-ssr/discussions/901) for more information and for alternative workarounds.
+This was adapted from https://github.com/brillout/vps-mui.
+
+While Emotion (the CSS-in-JS solution that MUI uses) works out-of-the-box with
+SSR, [it does have a caveat](https://emotion.sh/docs/ssr#advanced-approach).
+
+This repo adds the Emotion cache portion. After some discussion, [we decided to
+keep this as a separate
+example](https://github.com/brillout/vps-mui/pull/1#issuecomment-1834311851).
