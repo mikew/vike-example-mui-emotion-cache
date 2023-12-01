@@ -1,0 +1,16 @@
+/*
+Due to how imported .css files are inserted, by default you won't be able to
+override any custom mui styles.
+This example works because it's more specific
+(https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity).
+If you would like to override mui styles with imported .css files without the
+extra class name, you can do something like:
+
+    :root .MuiButton-root {
+      color: #f0f;
+    }
+*/
+
+.mui-overrides .MuiButton-root {
+  color: #f0f;
+}
