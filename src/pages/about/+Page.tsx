@@ -1,7 +1,8 @@
 import { Typography } from '@mui/material'
 
+import PageContentPaper from '#src/app/PageContentPaper'
+
 import './code.css'
-import PageContentPaper from '../../renderer/PageContentPaper'
 
 export default function Page() {
   return (

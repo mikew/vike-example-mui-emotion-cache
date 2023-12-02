@@ -2,9 +2,9 @@ import Menu from '@mui/icons-material/Menu'
 import { Typography } from '@mui/material'
 import Button from '@mui/material/Button'
 
-import PageContentPaper from '../../renderer/PageContentPaper'
-
 import { Counter } from './Counter'
+
+import PageContentPaper from '#src/app/PageContentPaper'
 
 export default function Page() {
   return (

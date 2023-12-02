@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material'
 
-import PageContentPaper from '../../renderer/PageContentPaper'
+import PageContentPaper from '#src/app/PageContentPaper'
 
 export default function Page({ is404 }: { is404: boolean }) {
   if (is404) {

@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import { forwardRef } from 'react'
 
-import { usePageContext } from './PageContext'
+import { usePageContext } from '#src/renderer/PageContext'
 
 export const Link = forwardRef<
   HTMLAnchorElement,

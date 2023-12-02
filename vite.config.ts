@@ -1,6 +1,8 @@
 import react from '@vitejs/plugin-react'
+import aliasHq from 'alias-hq'
 import ssr from 'vike/plugin'
 import type { UserConfig } from 'vite'
+
 const isProd = process.env.NODE_ENV === 'production'
 
 // https://vitejs.dev/config/ssr-options.html#ssr-noexternal
@@ -24,6 +26,11 @@ const config: UserConfig = {
       prerender: true,
     }),
   ],
+  resolve: {
+    alias: {
+      ...aliasHq.get('rollup'),
+    },
+  },
   ssr: {
     noExternal,
   },

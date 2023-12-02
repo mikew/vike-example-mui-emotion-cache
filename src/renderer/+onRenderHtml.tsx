@@ -4,10 +4,10 @@ import ReactDOMServer from 'react-dom/server'
 import { escapeInject, dangerouslySkipEscape } from 'vike/server'
 import type { OnRenderHtmlAsync } from 'vike/types'
 
-import createEmotionCache from './createEmotionCache'
-import invariant from './invariant'
-import logoUrl from './logo.svg'
-import { PageShell } from './PageShell'
+import logoUrl from '#src/app/logo.svg'
+import { PageShell } from '#src/app/PageShell'
+import invariant from '#src/lib/invariant'
+import createEmotionCache from '#src/mui/createEmotionCache'
 
 const onRenderHtml: OnRenderHtmlAsync = async (pageContext) => {
   const { Page, pageProps } = pageContext

@@ -1,6 +1,6 @@
 import { createContext, useContext } from 'react'
 
-import invariant from './invariant'
+import invariant from '#src/lib/invariant'
 
 declare global {
   namespace Vike {

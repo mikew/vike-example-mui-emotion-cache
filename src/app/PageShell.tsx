@@ -16,8 +16,9 @@ import { StrictMode } from 'react'
 
 import { Link } from './Link'
 import logo from './logo.svg'
-import { PageContextProvider } from './PageContext'
 import theme from './theme'
+
+import { PageContextProvider } from '#src/renderer/PageContext'
 
 import './mui-overrides.css'
 

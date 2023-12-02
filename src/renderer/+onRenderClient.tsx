@@ -1,9 +1,9 @@
 import { hydrateRoot } from 'react-dom/client'
 import type { OnRenderClientAsync } from 'vike/types'
 
-import createEmotionCache from './createEmotionCache'
-import invariant from './invariant'
-import { PageShell } from './PageShell'
+import { PageShell } from '#src/app/PageShell'
+import invariant from '#src/lib/invariant'
+import createEmotionCache from '#src/mui/createEmotionCache'
 
 const onRenderClient: OnRenderClientAsync = async (pageContext) => {
   const { Page, pageProps } = pageContext
