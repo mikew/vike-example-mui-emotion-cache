@@ -2,6 +2,10 @@
 
 Example of using [vike](https://github.com/vikejs/vike) with [MUI](https://mui.com/).
 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_Small.svg)](https://stackblitz.com/~/github.com/mikew/vike-example-mui-emotion-cache)
+
+## Getting Started
+
 ```bash
 git clone https://github.com/mikew/vike-example-mui-emotion-cache
 
